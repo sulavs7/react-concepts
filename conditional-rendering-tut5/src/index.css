@@ -1,0 +1,19 @@
+.welcome-message {
+  font-size: 3em;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(67, 238, 67);
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.login-prompt {
+  font-size: 3em;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(238, 67, 67);
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
