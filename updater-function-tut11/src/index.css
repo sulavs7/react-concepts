@@ -1,0 +1,28 @@
+.count-display-container {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.count-display {
+  font-size: 7rem;
+  margin: 10px 10px;
+}
+.counter-buttons {
+  margin: 0px 10px;
+  width: 100px;
+  height: 50px;
+  color: aliceblue;
+  background-color: hsl(196, 66%, 55%);
+  border: 2px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+.counter-buttons:hover {
+  background-color: hsl(196, 66%, 35%);
+  cursor: pointer;
+}
