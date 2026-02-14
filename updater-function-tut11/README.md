@@ -1,4 +1,4 @@
-## React Counter — Core Concepts Learned
+## Updater Function — Core Concepts Learned
 
 This counter project demonstrates important React concepts related to **state updates, batching, and updater functions**.
 
