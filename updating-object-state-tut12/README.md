@@ -28,26 +28,26 @@ React does NOT merge objects automatically.
 Updating state replaces the entire object.
 
 ❌ Wrong:
-
+```jsx
 setCar({ year: 2025 });
-
+```
 Result → other properties (name, color) are lost.Only year 2025 is left on the object.
 
 ### 3. Spread Operator (...) Preserves Existing State
 
 The spread operator copies existing properties before updating.
-
+```jsx
 setCar(c => ({ ...c, name: "BMW" }));
-
+```
 Without spread → entire object replaced
 With spread → only one field updated
 
 ### 4. Using Updater Function for Safe Updates
 
 Updater function gives latest state value and avoids stale state issues.
-
+```jsx
 setCar(c => ({ ...c, year: 2025 }));
-
+```
 Why this works:
 
 c → latest state
@@ -77,9 +77,9 @@ Key idea:
 ### 6. Returning Object from Arrow Function
 
 When returning an object from arrow function, wrap in parentheses.
-
+```jsx
 setCar(c => ({ ...c, year: 2025 }));
-
+``` 
 Without parentheses → treated as function block, not object.
 
 ### 7. React State is Immutable
@@ -87,9 +87,10 @@ Without parentheses → treated as function block, not object.
 Never mutate state directly
 
 Avoid:
-
+```jsx
 car.year = 2025;
-
+```
 Always create new object ✔
-
+```jsx
 setCar(c => ({ ...c, year: 2025 }));
+```
