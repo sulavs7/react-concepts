@@ -4,7 +4,7 @@ A simple **React-based Todo List** application that demonstrates core React conc
 
 ---
 
-## 🔑 Key Features
+## Features
 
 - **Add Tasks**: Users can type a task and add it to the list.
 - **Delete Tasks**: Remove any task from the list.
@@ -14,7 +14,7 @@ A simple **React-based Todo List** application that demonstrates core React conc
 
 ---
 
-## 🧠 Key Learnings
+## Key Learnings
 
 1. **React State Management (`useState`)**
    - Learned how to use `useState` for storing dynamic data.
