@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 function MyComponent() {
-  const [tasks, setTasks] = useState([
-    "Eat Breakfast",
-    "Go to gym ",
-    "study react",
-  ]);
+  //   const [tasks, setTasks] = useState([
+  //     "Eat Breakfast",
+  //     "Go to gym ",
+  //     "study react",
+  //   ]);
+  const [tasks, setTasks] = useState(() => {
+    const saved = localStorage.getItem("tasks");
+    return saved
+      ? JSON.parse(saved)
+      : ["Eat Breakfast", "Go to gym", "study react"];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const [newTask, setNewTask] = useState("");
 
